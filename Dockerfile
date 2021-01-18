@@ -21,7 +21,7 @@ RUN set -ex \
     && ln -s /usr/local/python3/bin/pip3 /usr/local/bin/pip3 \
     && mkdir /root/.pip && mv /root/project/pip.conf /root/.pip/ \
     && pip3 install --upgrade pip \
-    && pip3 install -r /root/project/requirement.txt
+    && pip3 install -r /root/project/requirement.txt \
     # 修改系统时区为东八区
     && rm -rf /etc/localtime \
     && ln -s /usr/share/zoneinfo/Asia/Shanghai /etc/localtime \
