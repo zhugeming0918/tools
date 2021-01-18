@@ -30,4 +30,4 @@ RUN set -ex \
     && echo -e "LANG=\"zh_CN.UTF-8\"\nLC_ALL=\"zh_CN.UTF-8\"" > /etc/locale.conf
 ENV LANG zh_CN.UTF-8
 ENV LC_ALL zh_CN.UTF-8
-CMD ["python3", "/root/project/test.py" ]
+CMD ["/bin/bash", "-ce", "tail -f /dev/null"]
